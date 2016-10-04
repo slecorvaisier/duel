@@ -1,0 +1,116 @@
+.fighter {
+  height: 100px;
+  width: 100px;
+  float: left;
+  line-height: 100px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.fighter > label {
+  color: white;
+}
+
+.fighter > img {
+  width: 100%;
+  height: 100%;
+  clip-path: circle(50px at center);
+}
+
+.picked {
+  opacity: .4;
+  background-color: blue;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  clip-path: circle(50px at center);
+  top: 0;
+  position: absolute;
+  z-index: 9999;
+}
+
+.won {
+  opacity: 0;
+  background-color: green;
+  -webkit-animation: fadeinOverlay .5s linear 2s forwards;
+  animation: fadeinOverlay .5s linear 2s forwards;
+}
+
+.lost {
+  opacity: 0;
+  background-color: red;
+  -webkit-animation: fadeinOverlay .5s linear 2s forwards;
+  animation: fadeinOverlay .5s linear 2s forwards;
+}
+
+.animtest {
+  -webkit-animation: fadeout 2 linear forwards;
+  animation: fadeout 2s linear forwards;
+}
+
+.fighter:first-of-type {
+  float: left;
+  margin-left: 20%;
+}
+
+.fighter:last-of-type {
+  float: right;
+  margin-right: 20%;
+}
+
+.avatar {
+  float: left;
+  margin-top: 1em;
+  margin-right: 1em;
+  position: relative;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
+
+.pit > label {
+  position: absolute;
+  font-size: x-large;
+  line-height: 100px;
+  color: gray;
+  margin-top: 20px;
+  -webkit-animation: fadeinout 2s linear forwards;
+  animation: fadeinout 2s linear forwards;
+}
+
+@-webkit-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeinOverlay {
+  0% { opacity: 0; }
+  100% { opacity: .4; }
+}
+
+@keyframes fadeinOverlay {
+  0% { opacity: 0; }
+  100% { opacity: .4; }
+}
+
+@-webkit-keyframes fadeout {
+  0% { opacity: .4; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeout {
+  0% { opacity: .4; }
+  100% { opacity: 0; }
+}

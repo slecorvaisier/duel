@@ -1,0 +1,52 @@
+.pit {
+  width: 100%;
+  position:relative;
+  display: block;
+  float: left;
+}
+
+.pit label.versus {
+  text-align: center;
+  position: absolute;
+  font-size: x-large;
+  line-height: 100px;
+  color: gray;
+  margin-top: 20px;
+  -webkit-animation: fadeinout 2s linear forwards;
+  animation: fadeinout 2s linear forwards;
+}
+
+.pit .result {
+  text-align: center;
+  opacity: 0;
+  -webkit-animation: fadein 1s linear 2.5s forwards;
+  animation: fadein 1s linear 2.5s forwards;
+}
+
+.pit .result-win {
+  color: green;
+}
+
+.pit .result-lost {
+  color: red;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

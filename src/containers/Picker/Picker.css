@@ -1,0 +1,21 @@
+.picker {
+  height: 200px;
+}
+
+.picker > h3 {
+  color: gray;
+}
+
+.pickerRow {
+  width: 100%;
+  float: left;
+  border-top: 1px solid lightgrey;
+}
+
+.pickerRow > label {
+  position: absolute;
+  font-size: x-large;
+  line-height: 100px;
+  color: gray;
+  margin-top: 20px;
+}
