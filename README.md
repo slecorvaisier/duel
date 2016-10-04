@@ -18,5 +18,5 @@ $ npm start
 
 ## TODO:
 
-Finishing animation chain
-Calling real API
+* Finishing animation chain
+* Calling real API
