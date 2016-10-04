@@ -1,4 +1,4 @@
-# graphux
+# duel
 experiments on Facebook create-react-app &amp; CSS3 animations
 
 ## Installation
